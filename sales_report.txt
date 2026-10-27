@@ -1,0 +1,9 @@
+DAILY FOOD DELIVERY SALES REPORT
+Total orders received: 10
+Successfully processed: 10
+Invalid orders: 0
+Total revenue: Rs. 4883.0
+
+HIGHEST-VALUE ORDER
+Order ID: 110
+Final bill: Rs. 1548.0
