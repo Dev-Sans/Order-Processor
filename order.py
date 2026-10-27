@@ -53,14 +53,7 @@ def process_order(order):
     print(f"Discount: Rs. {round(discount, 2)}")
     print(f"Delivery charge: Rs. {round(delivery, 2)}")
     print(f"Final bill: Rs. {round(final_total, 2)}")
-    return {
-        "id": order["id"],
-        "subtotal": subtotal,
-        "discount": discount,
-        "delivery": delivery,
-        "final_total": final_total
-    }
-
+    return {"id": order["id"], "subtotal": subtotal, "discount": discount, "delivery": delivery, "final_total": final_total}
 
 processed_orders = []
 for order in orders:
@@ -69,31 +62,16 @@ for order in orders:
     if result is not None:
         processed_orders.append(result)
 if processed_orders:
-    highest_order = max(
-        processed_orders,
-        key=lambda order: order["final_total"]
-    )
+    highest_order = max(processed_orders, key=lambda order: order["final_total"])
 else:
     highest_order = None
 def generate_report():
-    total_revenue = sum(
-        order["final_total"] for order in processed_orders
-    )
-    report = [
-        "DAILY FOOD DELIVERY SALES REPORT",
-        f"Total orders received: {len(orders)}",
-        f"Successfully processed: {len(processed_orders)}",
-        f"Invalid orders: {len(orders) - len(processed_orders)}",
-        f"Total revenue: Rs. {round(total_revenue, 2)}"
-    ]
+    total_revenue = sum(order["final_total"] for order in processed_orders)
+    report = ["DAILY FOOD DELIVERY SALES REPORT", f"Total orders received: {len(orders)}", f"Successfully processed: {len(processed_orders)}",
+        f"Invalid orders: {len(orders) - len(processed_orders)}", f"Total revenue: Rs. {round(total_revenue, 2)}"]
 
     if highest_order is not None:
-        report.extend([
-            "",
-            "HIGHEST-VALUE ORDER",
-            f"Order ID: {highest_order['id']}",
-            f"Final bill: Rs. {round(highest_order['final_total'], 2)}"
-        ])
+        report.extend("\nHIGHEST-VALUE ORDER", f"Order ID: {highest_order['id']}", f"Final bill: Rs. {round(highest_order['final_total'], 2)}"])
 
     report_text = "\n".join(report)
     print("\n" + report_text)
