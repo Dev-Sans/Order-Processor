@@ -1,0 +1,42 @@
+FOOD DELIVERY ORDER PROCESSOR  
+SAMPLE MENU AND ORDERS  
+
+MENU  
+1. Chicken Biriyani - Rs. 160
+2. Mutton Biriyani - Rs. 180
+3. Meals - Rs. 90
+4. Fish Meals - Rs. 120
+5. Poori Masala - Rs. 125
+6. Ginger Lemon Sugar cane juice - Rs. 150
+
+SAMPLE ORDERS  
+
+Order ID: 101  
+Items: Chicken Biriyani x 2
+
+Order ID: 102  
+Items: Mutton Biriyani x 1, Meals x 1
+
+Order ID: 103  
+Items: Fish Meals x 2
+
+Order ID: 104  
+Items: Poori Masala x 2, Meals x 5
+
+Order ID: 105  
+Items: Chicken Biriyani x 1, Ginger Lemon Sugar cane juice x 1
+
+Order ID: 106  
+Items: Mutton Biriyani x 2
+
+Order ID: 107  
+Items: Meals x 2, Fish Meals x 1
+
+Order ID: 108  
+Items: Chicken Biriyani x 2, Poori Masala x 1
+
+Order ID: 109  
+Items: Fish Meals x 1, Ginger Lemon Sugar cane juice x 1
+
+Order ID: 110  
+Items: Mutton Biriyani x 2, Chicken Biriyani x 4, Meals x 3, Ginger Lemon Sugar cane juice x 3
